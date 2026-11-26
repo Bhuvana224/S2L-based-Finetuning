@@ -1,0 +1,10 @@
+torch
+transformers
+peft
+accelerate
+# WikiSQL on the Hub is script-based, which needs datasets<4 (and trust_remote_code)
+datasets>=2.19,<4.0
+scikit-learn
+rouge_score
+matplotlib
+numpy
