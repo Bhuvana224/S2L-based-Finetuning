@@ -1,5 +1,6 @@
 torch
-transformers
+transformers>=4.46,<5
+torchao>=0.16.0
 peft
 accelerate
 # WikiSQL on the Hub is script-based, which needs datasets<4 (and trust_remote_code)

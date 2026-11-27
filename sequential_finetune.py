@@ -135,7 +135,7 @@ def main():
 
         t0 = time.time()
         targs = TrainingArguments(
-            output_dir=f"{R_}/tmp/{name}", per_device_train_batch_size=8, gradient_accumulation_steps=2,
+            output_dir=f"{R_}/tmp/{name}", per_device_train_batch_size=2, gradient_accumulation_steps=8,
             learning_rate=args.lr, num_train_epochs=1 if args.debug else args.epochs,
             lr_scheduler_type="cosine", warmup_ratio=0.03, logging_steps=20, save_strategy="no",
             report_to="none", bf16=use_bf16, fp16=not use_bf16, remove_unused_columns=False, seed=args.seed)
